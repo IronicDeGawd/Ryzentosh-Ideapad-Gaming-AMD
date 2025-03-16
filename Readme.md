@@ -1,6 +1,16 @@
-# Hackintosh Sequoia 15 - Lenovo Ideapad Gaming 3
+# Hackintosh Sequoia 15 - Lenovo Ideapad Gaming 3 15ACH6D1
 
 This guide details the installation and post-installation process for running macOS Sequoia 15 on the Lenovo Ideapad Gaming 3 with an AMD Ryzen 5600H CPU. It includes the kexts, ACPI patches, boot arguments, and necessary configurations.
+
+## Screenshots
+
+| System | Cinebench Score : Multi Core | Cinebench Score : Single Core |
+|-------------|-------------|-------------|
+| ![Screenshot 1](https://github.com/user-attachments/assets/15d0f7c4-742d-49be-8998-6fc006c0d9f8) | ![Screenshot 2](https://github.com/user-attachments/assets/b58178c7-f238-4d44-875a-0030c46e7f96) | ![Screenshot 3](https://github.com/user-attachments/assets/1e51f766-ba8f-4589-8cae-bbfcca2d146e) |
+
+
+
+
 
 ## System Specifications
 
@@ -17,6 +27,17 @@ This guide details the installation and post-installation process for running ma
 | **WiFi/Bluetooth** | Mediatek Card (not supported)          | ❌ Not Working |
 | **Sleep**       | Mostly working                              | ✅ Fixed |
 
+## Tools Used
+
+| Tool | Purpose |
+|------|---------|
+| [Dortania's OpenCore Guide](https://dortania.github.io/OpenCore-Install-Guide/) | Main Hackintosh guide |
+| [ChefKiss Guide](https://chefkissinc.github.io/guides/hackintosh/) | AMD-specific kexts and patches |
+| [CorpNewt's UnPlugged](https://github.com/corpnewt/UnPlugged) | macOS offline installer creation |
+| [SSDTTime](https://github.com/corpnewt/SSDTTime) | Generate SSDTs |
+| [USBMap](https://github.com/corpnewt/USBMap) | USB mapping |
+| [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools) | SMBIOS generation |
+| [HoRNDIS](https://github.com/jwise/HoRNDIS) | Android USB tethering |
 
 ## Installation Steps
 
