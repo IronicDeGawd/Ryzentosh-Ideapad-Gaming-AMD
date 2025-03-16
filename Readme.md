@@ -26,6 +26,7 @@ This guide details the installation and post-installation process for running ma
 | **dGPU**        | Nvidia GTX 1650 (not supported)             | ❌ Not Working |
 | **WiFi/Bluetooth** | Mediatek Card (not supported)          | ❌ Not Working |
 | **Sleep**       | Mostly working                              | ✅ Fixed |
+| **Keyboard + Touchpad** | Working properly | ✅ Fixed |
 
 ## Tools Used
 
@@ -68,7 +69,6 @@ This guide details the installation and post-installation process for running ma
 | Kext Name | Purpose |
 |-----------|---------|
 | AppleMCEReporterDisabler.kext | Disables Apple MCE Reporter |
-| CtlnaAHCIPort.kext | Enables AHCI support |
 | GenericUSBXHCI.kext | USB 3.0 controller support |
 | HoRNDIS.kext | Enables Android USB tethering [GitHub](https://github.com/jwise/HoRNDIS) |
 | Lilu.kext | Required for macOS kernel patching |
@@ -78,9 +78,7 @@ This guide details the installation and post-installation process for running ma
 | USBMap.kext | USB port mapping [GitHub](https://github.com/corpnewt/USBMap) |
 | VirtualSMC.kext | Simulates Apple SMC |
 | VoodooPS2Controller.kext | PS/2 keyboard and trackpad support |
-| XLNCUSBFix.kext | Fixes USB issues |
 | VoodooI2C.kext | I2C input support |
-| AMDRyzenCPUPowerManagement.kext | Power management for Ryzen CPUs |
 | AppleALC.kext | Audio support |
 | BrightnessKeys.kext | Fixes brightness keys |
 | ECEnabler.kext | Fixes Embedded Controller issues |
@@ -102,6 +100,7 @@ This guide details the installation and post-installation process for running ma
 | SSDT-USB-Reset.aml | USB initialization fix |
 | SSDT-USBX.aml | USB power settings |
 | SSDT-XOSI.aml | Windows compatibility fix |
+| SSDT-GPRW.aml | Sleep/Wake fixes |
 
 ## Boot Arguments
 
@@ -112,8 +111,9 @@ This guide details the installation and post-installation process for running ma
 | keepsyms=1 | Keeps kernel symbols for debugging |
 | alcid=11 | Audio codec layout fix |
 | amfi_get_out_of_my_way=1 | Bypasses AMFI restrictions |
-| agdpmod=pikera | Enables Radeon dGPU support |
 | -lilubetaall | Enables Lilu on beta macOS versions |
+| -revcpu=1 | Enables AMD CPU fixes |
+| darkwake=0 | Disables unnecessary wake-ups |
 
 
 This EFI setup is tailored for **Lenovo Ideapad Gaming 3 with AMD Ryzen 5600H**. If using on a different system, generate fresh ACPI patches, USB maps, and SMBIOS.
