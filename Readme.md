@@ -4,7 +4,7 @@ This guide details the installation and post-installation process for running ma
 
 ## Screenshots
 
-| System | Cinebench Score : Multi Core | Cinebench Score : Single Core |
+| System | Cinebench Score : Multi Core (525) | Cinebench Score : Single Core (80) |
 |-------------|-------------|-------------|
 | ![Screenshot 1](https://github.com/user-attachments/assets/15d0f7c4-742d-49be-8998-6fc006c0d9f8) | ![Screenshot 2](https://github.com/user-attachments/assets/b58178c7-f238-4d44-875a-0030c46e7f96) | ![Screenshot 3](https://github.com/user-attachments/assets/1e51f766-ba8f-4589-8cae-bbfcca2d146e) |
 
